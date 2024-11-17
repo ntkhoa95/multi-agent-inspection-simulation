@@ -19,12 +19,55 @@ The key features of this system include:
 
 ## Directory Structure
 The project's directory structure is as follows:
-
-[The rest of the README.md content remains the same as before]
-  - `agents/`: Defines the various agent classes, including `MaintenanceAgent`, `MonitorAgent`, and others.
-  - `environment/`: Contains the `MaintenanceSimulation` class, which orchestrates the overall simulation.
-  - `models/`: Defines the different models used by the agents, such as `FailurePredictor` and `AnomalyDetector`.
-  - `utils/`: Provides utility classes and functions, including the `SensorDataGenerator` and visualization tools.
+```
+multi-agent-maintenance-system/
+├── README.md
+├── requirements.txt
+├── setup.py
+├── simulation.log
+├── agentic_maintenance.egg-info/
+│   ├── dependency_links.txt
+│   ├── PKG-INFO
+│   ├── requires.txt
+│   ├── SOURCES.txt
+│   └── top_level.txt
+├── config/
+│   └── config.yaml
+├── docs/
+│   ├── user_guide.md
+│   ├── api_documentation.md
+│   ├── troubleshooting.md
+│   ├── contribution_guidelines.md
+│   └── system_architecture.md
+├── examples/
+│   └── run_simulation.py
+└── src/
+    ├── __init__.py
+    ├── agents/
+    │   ├── __init__.py
+    │   ├── base_agent.py
+    │   ├── coordination_agent.py
+    │   ├── diagnostic_agent.py
+    │   ├── equipment_monitor.py
+    │   ├── knowledge_agent.py
+    │   ├── maintenance_agent.py
+    │   ├── monitor_agent.py
+    │   └── planning_agent.py
+    ├── environment/
+    │   ├── __init__.py
+    │   └── simulation.py
+    ├── models/
+    │   ├── __init__.py
+    │   ├── anomaly_detector.py
+    │   ├── failure_predictor.py
+    │   ├── learning.py
+    │   └── scheduler.py
+    └── utils/
+        ├── __init__.py
+        ├── data_generator.py
+        ├── resource_manager.py
+        └── visualization.py
+```
 
 ## Key Components
 The main components of the multi-agent maintenance system are:
