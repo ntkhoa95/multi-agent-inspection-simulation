@@ -9,3 +9,4 @@ seaborn==0.12.2
 asyncio==3.4.3
 aiohttp==3.8.5
 pytest==7.4.0
+pyyaml
