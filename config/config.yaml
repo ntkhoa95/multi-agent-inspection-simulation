@@ -1,0 +1,66 @@
+# config/config.yaml
+simulation:
+  duration_days: 30
+  time_step: 1800  # 5 minutes in seconds
+  equipment_count: 5
+  random_seed: 42
+
+equipment:
+  failure_rates:
+    bearing: 0.001
+    gear: 0.0005
+    motor: 0.0008
+  maintenance_durations:
+    bearing: 4  # hours
+    gear: 8
+    motor: 6
+  sensor_noise: 0.05
+  initial_health: 1.0
+  degradation_rates:
+    min: 0.00005  # Much slower degradation
+    max: 0.0001
+
+sensors:
+  vibration:
+    baseline: 1.0
+    noise: 0.1
+  temperature:
+    baseline: 40.0
+    noise: 2.0
+  pressure:
+    baseline: 100.0
+    noise: 5.0
+
+agents:
+  learning_rate: 0.01
+  discount_factor: 0.95
+  update_interval: 1800  # 30 minutes
+  memory_size: 10000
+  batch_size: 64
+  epsilon_start: 1.0
+  epsilon_end: 0.01
+  epsilon_decay: 0.995
+  hidden_dim: 64
+  success_threshold: 0.7
+  health_threshold: 0.5   # Increased threshold
+  critical_threshold: 0.3  # Increased threshold
+  warning_threshold: 0.7   # New warning threshold
+  maintenance_cooldown: 14400  # Reduced to 15 minutes
+
+resources:
+  technicians:
+    count: 3
+    cost_per_hour: 50.0
+    capabilities: ["mechanical", "electrical"]
+  tools:
+    count: 5
+    cost_per_hour: 25.0
+    capabilities: ["precision_measurement", "diagnostic"]
+  parts:
+    initial_stock: 100
+    reorder_point: 20
+    cost_per_unit: 100.0
+
+visualization:
+  update_interval: 1800  # 30 minutes in seconds
+  plot_window: 24  # hours
