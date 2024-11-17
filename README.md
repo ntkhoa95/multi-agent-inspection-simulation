@@ -28,6 +28,7 @@ multi-agent-maintenance-system/
 │   └── config.yaml
 ├── docs/
 │   ├── user_guide.md
+│   ├── api_documentation.md
 │   └── system_architecture.md
 ├── examples/
 │   └── run_simulation.py
