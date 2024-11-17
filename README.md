@@ -24,20 +24,10 @@ multi-agent-maintenance-system/
 ├── README.md
 ├── requirements.txt
 ├── setup.py
-├── simulation.log
-├── agentic_maintenance.egg-info/
-│   ├── dependency_links.txt
-│   ├── PKG-INFO
-│   ├── requires.txt
-│   ├── SOURCES.txt
-│   └── top_level.txt
 ├── config/
 │   └── config.yaml
 ├── docs/
 │   ├── user_guide.md
-│   ├── api_documentation.md
-│   ├── troubleshooting.md
-│   ├── contribution_guidelines.md
 │   └── system_architecture.md
 ├── examples/
 │   └── run_simulation.py
